@@ -3,7 +3,7 @@
 body {
   margin: 0;
   overflow: hidden;
-  background-image: url(./images/header-large.gif);
+  background-image: url(./images/background.gif);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -13,8 +13,8 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   position: absolute;
   padding-top: 60px;
 }
@@ -157,12 +157,26 @@ body {
 }
 
 @media (max-width: 600px) {
-  body {
-    background-position: left center;
-  }
   .badge {
-    position: absolute;
-    width: 450px;
-    font-size: 38px;
+    height: 100px;
+    width: 350px;
+    font-size: 34px;
+  }
+}
+
+
+@media (max-width: 360px) {
+  .badge {
+    height: 90px;
+    width: 320px;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  .badge {
+    height: 80px;
+    width: 300px;
+    font-size: 28px;
   }
 }
